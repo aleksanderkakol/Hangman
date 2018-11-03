@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.usedCharacters {
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+    list-style: none;
+}
+
+.formSubmit {
+    position: relative;
+}
+
+li {
+    padding: 5px;
+}
+
+.green {
+    color: rgba(11, 212, 21, 0.877);
+    text-shadow: 0 0 10px rgba(11, 212, 21, 0.877); 
+}
+
+.red {
+    color: red;
+    text-shadow: 0 0 10px red; 
+}
+
+.gameOver {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.925);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameOverTitle {
+    font-size: 3 rem;
+    color: aliceblue;
+}
