@@ -2,17 +2,98 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.usedCharacters {
-    font-weight: bold;
+.main {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 4rem;
+}
+
+.lives {
+    font-size: 2rem;
+    padding: 10px 0;
+}
+
+.form {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formLabel {
+    padding: 20px 0;
+    
+}
+
+.formInput {
     width: 100%;
-    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.button {
+    border: 0;
+    padding: 20px 50px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.restart {
+    background-color: rgb(7, 7, 7);
 }
 
 .formSubmit {
-    position: relative;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    transition: 0.3s;
+    animation: animate 100s linear infinite;
+}
+
+.formSubmit:active {
+    color: #00151f;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%
+    }
+}
+
+.hiddenWord {
+    font-size: 2rem;
+    padding: 40px 0 0 0;
+}
+
+.characters {
+    margin: 50px 0 0 0;
+}
+
+.usedCharacters {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    margin: 20px 0;
 }
 
 li {
