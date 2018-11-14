@@ -63,6 +63,11 @@
     animation: animate 100s linear infinite;
 }
 
+.formSubmit:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .formSubmit:active {
     color: #00151f;
 }
