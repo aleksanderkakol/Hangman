@@ -63,7 +63,7 @@
     animation: animate 100s linear infinite;
 }
 
-.formSubmit:hover {
+.button:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
